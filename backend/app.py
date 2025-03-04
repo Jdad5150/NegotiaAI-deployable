@@ -22,10 +22,10 @@ logging.getLogger().addHandler(console_handler)
 
 
 # Load the model
-model = joblib.load('./shared/salary_prediction_model.pkl')
+model = joblib.load('salary_prediction_model.pkl')
 
 # Create the Flask app
-app = Flask(__name__)
+app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/static')
 
 # Routes
 @app.route('/get-jobs')
@@ -42,7 +42,7 @@ def get_jobs():
         app.logger.info("Request received for /get-jobs")
 
         # Send/Log the job encoding JSON file to the client
-        response = send_file('../shared/title_encoding.json')
+        response = send_file('title_encoding.json')
         app.logger.info("Response sent for /get-jobs")        
         return response
     
@@ -65,7 +65,7 @@ def get_exp_level():
         app.logger.info("Request received for /get-exp-level")
 
         # Send/Log the experience level encoding JSON file to the client
-        response = send_file('../shared/experience_encoding.json')
+        response = send_file('experience_encoding.json')
         app.logger.info("Response sent for /get-exp-level")
         return response
     
@@ -88,7 +88,7 @@ def get_states():
         app.logger.info("Request received for /get-states")
 
         # Send/Log the state encoding JSON file to the client
-        response = send_file('../shared/state_encoding.json')
+        response = send_file('state_encoding.json')
         app.logger.info("Response sent for /get-states")
         return response
     
