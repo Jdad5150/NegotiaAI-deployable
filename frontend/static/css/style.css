@@ -529,7 +529,7 @@ footer p {
   }
 
   #prediction-result {
-    font-size: 8vw;
+    font-size: 5vw;
   }
 
   .select-container-h1 {
@@ -549,11 +549,11 @@ footer p {
   }
 
   #response-container-h1 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   #response-subtitle {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   footer {
