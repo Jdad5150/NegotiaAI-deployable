@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NegotiaAI</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='assets/logo.png') }}"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="{{ url_for('static', filename='assets/logo.png') }}"
+        alt="NegotiaAI Logo"
+        class="logo"
+      />
+      <div class="header-right">
+        <p id="header-title">NegotiaAI</p>
+        <p id="header-subtitle">AI Powered Salary Negotiation Tool</p>
+      </div>
+    </div>
+    <div class="body-container">
+      <div class="form-container">
+        <form id="prediction-form">
+          <h1 id="form-header">
+            Please enter the details about the job below.
+          </h1>
+          <div class="select-container">
+            <h1 class="select-container-h1">Job Title</h1>
+            <h2 class="select-container-h2">
+              Job title for the position you're applying for.
+            </h2>
+            <select id="job_list" required="true" name="job_list">
+              <option value="" selected disabled>Select your job title</option>
+            </select>
+            <script src="{{ url_for('static',filename='js/get-jobs.js')}}"></script>
+          </div>
+          <div class="select-container">
+            <h1 class="select-container-h1">Location</h1>
+            <h2 class="select-container-h2">
+              State that the job is located in.
+            </h2>
+            <select id="state_list" required="true" name="state_list">
+              <option value="" selected disabled>Select your State</option>
+            </select>
+            <script src="{{ url_for('static',filename='js/get-states.js')}}"></script>
+          </div>
+          <div class="select-container">
+            <h1 class="select-container-h1">
+              Experience
+              <span class="fa-solid fa-circle-info" id="info-icon"></span>
+              <div class="popover" id="popover">
+                Entry Level: 0-2 years of experience
+                <br />
+                Mid Level: 3-5 years of experience
+                <br />
+                Senior Level: 6+ years of experience
+              </div>
+            </h1>
+            <h2 class="select-container-h2">Experience level that you have.</h2>
+            <select id="experience_list" required="true" name="experience_list">
+              <option value="" selected disabled>
+                Select your experience level
+              </option>
+            </select>
+            <script src="{{ url_for('static',filename='js/get-exp-level.js')}}"></script>
+          </div>
+          <button type="submit">Get Salary</button>
+        </form>
+      </div>
+      <div class="response-container">
+        <h1 id="response-container-h1">Welcome to NegotiaAI</h1>
+        <h2 id="response-subtitle">
+          Use this tool to prepare yourself for salary negotiations. This AI
+          powered application is designed to help you know your worth
+        </h2>
+        <div id="prediction-result"></div>
+        <div id="loader" class="loader" style="display: none"></div>
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p class="diclaimer">
+      Disclaimer: This application uses AI, and while efforts are made for
+      accuracy, results may not always be perfect.
+    </p>
+  </footer>
+</html>
