@@ -1,10 +1,21 @@
+
 from flask import Flask, render_template, request, jsonify, send_file
+from flask_cors import CORS
 import logging
 import numpy as np
 import joblib
 import pandas as pd
 import sys
 import time
+
+# ...existing code...
+
+app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/static')
+CORS(app)
+
+
+
+
 
 
 # Logging configuration
@@ -24,78 +35,54 @@ logging.getLogger().addHandler(console_handler)
 # Load the model
 model = joblib.load('salary_prediction_model.pkl')
 
-# Create the Flask app
 app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/static')
+CORS(app)
+# Health check endpoint (must be after app creation)
+@app.route('/health')
+def health():
+    """
+    Health check endpoint for uptime monitoring.
+    Returns 200 OK if the app is running.
+    """
+    return jsonify({'status': 'ok'}), 200
+
+
+def send_encoding_json(filename, log_route):
+    """
+    Helper function to send encoding JSON files and handle errors/logging.
+    """
+    try:
+        app.logger.info(f"Request received for {log_route}")
+        response = send_file(filename)
+        app.logger.info(f"Response sent for {log_route}")
+        return response
+    except Exception as e:
+        app.logger.error(f"Error in {log_route}: {str(e)}")
+        return jsonify({f'Error loading {filename}': str(e)})
 
 # Routes
 @app.route('/get-jobs')
 def get_jobs():
-
     """
     Returns the job titles from the shared folder as a JSON file.
-    This route sends the job encoding JSON file to the client.
     """
-
-
-    try:
-        # Log the request
-        app.logger.info("Request received for /get-jobs")
-
-        # Send/Log the job encoding JSON file to the client
-        response = send_file('title_encoding.json')
-        app.logger.info("Response sent for /get-jobs")        
-        return response
-    
-    # Handle/Log exceptions
-    except Exception as e:
-        app.logger.error(f"Error in /get-jobs: {str(e)}")
-        return jsonify({'Error loading jobtitles': str(e)})    
+    return send_encoding_json('title_encoding.json', '/get-jobs')
 
 
 @app.route('/get-exp-level')
 def get_exp_level():
     """
     Returns the experience levels from the shared folder as a JSON file.
-    This route sends the experience level encoding JSON file to the client.
     """
-
-
-    try:
-        # Log the request
-        app.logger.info("Request received for /get-exp-level")
-
-        # Send/Log the experience level encoding JSON file to the client
-        response = send_file('experience_encoding.json')
-        app.logger.info("Response sent for /get-exp-level")
-        return response
-    
-    # Handle/Log exceptions
-    except Exception as e:
-        app.logger.error(f"Error in /get-exp-level: {str(e)}")
-        return jsonify({'Error loading experience levels': str(e)})
+    return send_encoding_json('experience_encoding.json', '/get-exp-level')
 
 
 @app.route('/get-states')
 def get_states():
     """
     Returns the states from the shared folder as a JSON file.
-    This route sends the state encoding JSON file to the client.
     """
-
-
-    try:
-        # Log the request
-        app.logger.info("Request received for /get-states")
-
-        # Send/Log the state encoding JSON file to the client
-        response = send_file('state_encoding.json')
-        app.logger.info("Response sent for /get-states")
-        return response
-    
-    # Handle/Log exceptions
-    except Exception as e:
-        app.logger.error(f"Error in /get-states: {str(e)}")
-        return jsonify({'Error loading states': str(e)})
+    return send_encoding_json('state_encoding.json', '/get-states')
     
 
 
@@ -121,11 +108,22 @@ def predict():
 
 
     try:
+        # Validate request JSON
+        if not request.is_json:
+            app.logger.error("/predict: Request content-type is not application/json")
+            return jsonify({'error': 'Request must be JSON'}), 400
 
-        # Get features from the request JSON
-        features = request.json['features']
+        req_json = request.get_json()
+        if not req_json or 'features' not in req_json:
+            app.logger.error("/predict: Missing 'features' in request JSON")
+            return jsonify({'error': "Missing 'features' in request JSON"}), 400
+
+        features = req_json['features']
+        if not isinstance(features, list) or len(features) != 3:
+            app.logger.error(f"/predict: 'features' must be a list of 3 elements. Got: {features}")
+            return jsonify({'error': "'features' must be a list of 3 elements: [state, title, experience]"}), 400
+
         app.logger.info(f"Request received for /predict: {features}")
-
 
         # Prepare the features for the model and convert to a DataFrame        
         input_features = {
@@ -149,11 +147,9 @@ def predict():
 
         # Return the prediction as a JSON
         return jsonify({'prediction': prediction.tolist()})
-    
-    # Handle/Log exceptions
     except Exception as e:
         app.logger.error(f"Error in /predict: {str(e)}")
-        return jsonify({'Prediction Error': str(e)})
+        return jsonify({'error': 'Prediction failed'}), 500
     
 @app.errorhandler(Exception)
 def handle_exception(e):
@@ -163,10 +159,10 @@ def handle_exception(e):
     This handler catches any unhandled exceptions and returns a generic error message.
     """
     
-    # Log and return the error
+    # Log the error internally, but do not expose details to the client
     app.logger.error(f"Unexpected error: {str(e)}")
-    return jsonify({'error': 'An unexpected error occurred'}), 500
+    return jsonify({'error': 'An unexpected error occurred. Please try again later.'}), 500
 
 # Start the application
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

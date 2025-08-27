@@ -1,1 +1,885 @@
 
+2025-08-27 00:00:10,591 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-27 00:00:10,591 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-27 00:00:13,460 - INFO - Request received for home page
+2025-08-27 00:00:13,467 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:13] "GET / HTTP/1.1" 200 -
+2025-08-27 00:00:13,521 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:00:13,531 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:13] "GET /static/js/get-exp-level.js HTTP/1.1" 200 -
+2025-08-27 00:00:13,533 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:13] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2025-08-27 00:00:13,534 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:13] "GET /static/js/get-states.js HTTP/1.1" 200 -
+2025-08-27 00:00:13,534 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:13] "GET /static/js/get-jobs.js HTTP/1.1" 200 -
+2025-08-27 00:00:13,534 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:13] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-08-27 00:00:13,679 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:13] "GET /static/assets/bg.png HTTP/1.1" 200 -
+2025-08-27 00:00:14,948 - INFO - Request received for /get-jobs
+2025-08-27 00:00:14,949 - INFO - Response sent for /get-jobs
+2025-08-27 00:00:14,949 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:14] "GET /get-jobs HTTP/1.1" 200 -
+2025-08-27 00:00:14,951 - INFO - Request received for /get-exp-level
+2025-08-27 00:00:14,952 - INFO - Request received for /get-states
+2025-08-27 00:00:14,952 - INFO - Response sent for /get-exp-level
+2025-08-27 00:00:14,953 - INFO - Response sent for /get-states
+2025-08-27 00:00:14,953 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:14] "GET /get-exp-level HTTP/1.1" 200 -
+2025-08-27 00:00:14,953 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:14] "GET /get-states HTTP/1.1" 200 -
+2025-08-27 00:00:15,088 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:15] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:00:22,367 - INFO - Request received for /predict: [14, 8, 1]
+2025-08-27 00:00:22,382 - INFO - Model inference time:  0.0122 seconds
+2025-08-27 00:00:22,382 - INFO - Response sent for /predict: Model Input: [14, 8, 1], Prediction: [43764.8969672591]
+2025-08-27 00:00:22,383 - INFO - 127.0.0.1 - - [27/Aug/2025 00:00:22] "POST /predict HTTP/1.1" 200 -
+2025-08-27 00:01:29,413 - INFO - Request received for home page
+2025-08-27 00:01:29,415 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "GET / HTTP/1.1" 200 -
+2025-08-27 00:01:29,457 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,465 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,467 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,468 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,468 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,471 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-08-27 00:01:29,485 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,495 - INFO - Request received for /get-jobs
+2025-08-27 00:01:29,496 - INFO - Response sent for /get-jobs
+2025-08-27 00:01:29,496 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,498 - INFO - Request received for /get-states
+2025-08-27 00:01:29,499 - INFO - Request received for /get-exp-level
+2025-08-27 00:01:29,500 - INFO - Response sent for /get-states
+2025-08-27 00:01:29,500 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,501 - INFO - Response sent for /get-exp-level
+2025-08-27 00:01:29,502 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:01:29,560 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:29] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:01:39,780 - ERROR - Unexpected error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-08-27 00:01:39,781 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:39] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-27 00:01:39,825 - ERROR - Unexpected error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-08-27 00:01:39,826 - INFO - 127.0.0.1 - - [27/Aug/2025 00:01:39] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-08-27 00:02:12,031 - INFO - Request received for home page
+2025-08-27 00:02:12,032 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "GET / HTTP/1.1" 200 -
+2025-08-27 00:02:12,066 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,073 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,074 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,075 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,077 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,077 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,084 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,112 - INFO - Request received for /get-jobs
+2025-08-27 00:02:12,113 - INFO - Response sent for /get-jobs
+2025-08-27 00:02:12,113 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,114 - INFO - Request received for /get-states
+2025-08-27 00:02:12,115 - INFO - Request received for /get-exp-level
+2025-08-27 00:02:12,115 - INFO - Response sent for /get-states
+2025-08-27 00:02:12,116 - INFO - Response sent for /get-exp-level
+2025-08-27 00:02:12,117 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:02:12,117 - INFO - 127.0.0.1 - - [27/Aug/2025 00:02:12] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:03:53,639 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-27 00:03:53,639 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-27 00:03:56,877 - INFO - Request received for home page
+2025-08-27 00:03:56,882 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:56] "GET / HTTP/1.1" 200 -
+2025-08-27 00:03:56,925 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:03:56,930 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:56] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:03:56,931 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:56] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:03:56,934 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:56] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:03:56,936 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:56] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:03:56,936 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:03:56,940 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:56] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:03:57,888 - INFO - Request received for /get-jobs
+2025-08-27 00:03:57,888 - INFO - Request received for /get-states
+2025-08-27 00:03:57,889 - INFO - Response sent for /get-states
+2025-08-27 00:03:57,890 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:57] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:03:57,890 - INFO - Request received for /get-exp-level
+2025-08-27 00:03:57,890 - INFO - Response sent for /get-jobs
+2025-08-27 00:03:57,891 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:57] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:03:57,891 - INFO - Response sent for /get-exp-level
+2025-08-27 00:03:57,892 - INFO - 127.0.0.1 - - [27/Aug/2025 00:03:57] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:04:05,365 - ERROR - Unexpected error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-08-27 00:04:05,366 - INFO - 127.0.0.1 - - [27/Aug/2025 00:04:05] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-27 00:04:05,399 - ERROR - Unexpected error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-08-27 00:04:05,400 - INFO - 127.0.0.1 - - [27/Aug/2025 00:04:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-08-27 00:04:37,611 - ERROR - Unexpected error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-08-27 00:04:37,611 - INFO - 127.0.0.1 - - [27/Aug/2025 00:04:37] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-27 00:04:37,639 - ERROR - Unexpected error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-08-27 00:04:37,639 - INFO - 127.0.0.1 - - [27/Aug/2025 00:04:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-08-27 00:04:44,437 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-27 00:04:44,437 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-27 00:04:48,117 - INFO - 127.0.0.1 - - [27/Aug/2025 00:04:48] "GET /health HTTP/1.1" 200 -
+2025-08-27 00:04:48,137 - ERROR - Unexpected error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-08-27 00:04:48,138 - INFO - 127.0.0.1 - - [27/Aug/2025 00:04:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-08-27 00:04:54,971 - INFO - Request received for /predict: [16, 2, 1]
+2025-08-27 00:04:54,977 - INFO - Model inference time:  0.0050 seconds
+2025-08-27 00:04:54,977 - INFO - Response sent for /predict: Model Input: [16, 2, 1], Prediction: [47283.437915150455]
+2025-08-27 00:04:54,977 - INFO - 127.0.0.1 - - [27/Aug/2025 00:04:54] "POST /predict HTTP/1.1" 200 -
+2025-08-27 00:07:51,636 - INFO - 127.0.0.1 - - [27/Aug/2025 00:07:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:10:02,579 - INFO - Request received for home page
+2025-08-27 00:10:02,594 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:02] "GET / HTTP/1.1" 200 -
+2025-08-27 00:10:02,679 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:10:02,684 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:02] "GET /static/js/get-states.js HTTP/1.1" 200 -
+2025-08-27 00:10:02,687 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:02] "GET /static/js/get-jobs.js HTTP/1.1" 200 -
+2025-08-27 00:10:02,688 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:02] "GET /static/js/get-exp-level.js HTTP/1.1" 200 -
+2025-08-27 00:10:02,691 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:02] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-08-27 00:10:03,165 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:03] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2025-08-27 00:10:03,170 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:03] "GET /static/assets/bg.png HTTP/1.1" 200 -
+2025-08-27 00:10:03,214 - INFO - Request received for /get-jobs
+2025-08-27 00:10:03,215 - INFO - Response sent for /get-jobs
+2025-08-27 00:10:03,216 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:03] "GET /get-jobs HTTP/1.1" 200 -
+2025-08-27 00:10:03,217 - INFO - Request received for /get-states
+2025-08-27 00:10:03,217 - INFO - Response sent for /get-states
+2025-08-27 00:10:03,219 - INFO - Request received for /get-exp-level
+2025-08-27 00:10:03,219 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:03] "GET /get-states HTTP/1.1" 200 -
+2025-08-27 00:10:03,220 - INFO - Response sent for /get-exp-level
+2025-08-27 00:10:03,221 - INFO - 127.0.0.1 - - [27/Aug/2025 00:10:03] "GET /get-exp-level HTTP/1.1" 200 -
+2025-08-27 00:12:54,460 - INFO - Request received for home page
+2025-08-27 00:12:54,462 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "GET / HTTP/1.1" 200 -
+2025-08-27 00:12:54,507 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:12:54,508 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:12:54,511 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:12:54,513 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:12:54,515 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2025-08-27 00:12:54,516 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:12:54,532 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:12:54,546 - INFO - Request received for /get-jobs
+2025-08-27 00:12:54,547 - INFO - Response sent for /get-jobs
+2025-08-27 00:12:54,547 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:12:54,552 - INFO - Request received for /get-states
+2025-08-27 00:12:54,553 - INFO - Response sent for /get-states
+2025-08-27 00:12:54,553 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:12:54,554 - INFO - Request received for /get-exp-level
+2025-08-27 00:12:54,555 - INFO - Response sent for /get-exp-level
+2025-08-27 00:12:54,555 - INFO - 127.0.0.1 - - [27/Aug/2025 00:12:54] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,660 - INFO - Request received for home page
+2025-08-27 00:13:01,661 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "GET / HTTP/1.1" 200 -
+2025-08-27 00:13:01,697 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:13:01,701 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,703 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,705 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,707 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,709 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,726 - INFO - Request received for /get-jobs
+2025-08-27 00:13:01,726 - INFO - Response sent for /get-jobs
+2025-08-27 00:13:01,727 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,729 - INFO - Request received for /get-states
+2025-08-27 00:13:01,730 - INFO - Request received for /get-exp-level
+2025-08-27 00:13:01,731 - INFO - Response sent for /get-states
+2025-08-27 00:13:01,731 - INFO - Response sent for /get-exp-level
+2025-08-27 00:13:01,732 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,732 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,736 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:13:01,797 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:01] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,282 - INFO - Request received for home page
+2025-08-27 00:13:21,283 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "GET / HTTP/1.1" 200 -
+2025-08-27 00:13:21,305 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:13:21,308 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,310 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,313 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,314 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,317 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,335 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,342 - INFO - Request received for /get-jobs
+2025-08-27 00:13:21,343 - INFO - Response sent for /get-jobs
+2025-08-27 00:13:21,343 - INFO - Request received for /get-states
+2025-08-27 00:13:21,344 - INFO - Request received for /get-exp-level
+2025-08-27 00:13:21,344 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,345 - INFO - Response sent for /get-states
+2025-08-27 00:13:21,345 - INFO - Response sent for /get-exp-level
+2025-08-27 00:13:21,346 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,346 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:13:21,376 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:21] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,442 - INFO - Request received for home page
+2025-08-27 00:13:24,442 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "GET / HTTP/1.1" 200 -
+2025-08-27 00:13:24,483 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:13:24,486 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,491 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,497 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,499 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,500 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,528 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,543 - INFO - Request received for /get-jobs
+2025-08-27 00:13:24,544 - INFO - Response sent for /get-jobs
+2025-08-27 00:13:24,545 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,549 - INFO - Request received for /get-states
+2025-08-27 00:13:24,549 - INFO - Response sent for /get-states
+2025-08-27 00:13:24,549 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:13:24,552 - INFO - Request received for /get-exp-level
+2025-08-27 00:13:24,553 - INFO - Response sent for /get-exp-level
+2025-08-27 00:13:24,553 - INFO - 127.0.0.1 - - [27/Aug/2025 00:13:24] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,501 - INFO - Request received for home page
+2025-08-27 00:14:13,501 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "GET / HTTP/1.1" 200 -
+2025-08-27 00:14:13,538 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:14:13,539 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,540 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,545 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,545 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,546 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,564 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,572 - INFO - Request received for /get-jobs
+2025-08-27 00:14:13,572 - INFO - Response sent for /get-jobs
+2025-08-27 00:14:13,573 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,577 - INFO - Request received for /get-states
+2025-08-27 00:14:13,578 - INFO - Response sent for /get-states
+2025-08-27 00:14:13,578 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:14:13,581 - INFO - Request received for /get-exp-level
+2025-08-27 00:14:13,582 - INFO - Response sent for /get-exp-level
+2025-08-27 00:14:13,582 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:13] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,457 - INFO - Request received for home page
+2025-08-27 00:14:16,457 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "GET / HTTP/1.1" 200 -
+2025-08-27 00:14:16,493 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:14:16,499 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,502 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,503 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,505 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,508 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,521 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,621 - INFO - Request received for /get-jobs
+2025-08-27 00:14:16,623 - INFO - Response sent for /get-jobs
+2025-08-27 00:14:16,623 - INFO - Request received for /get-states
+2025-08-27 00:14:16,624 - INFO - Request received for /get-exp-level
+2025-08-27 00:14:16,625 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,626 - INFO - Response sent for /get-exp-level
+2025-08-27 00:14:16,626 - INFO - Response sent for /get-states
+2025-08-27 00:14:16,627 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,627 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:14:16,632 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:16] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,093 - INFO - Request received for home page
+2025-08-27 00:14:28,094 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "GET / HTTP/1.1" 200 -
+2025-08-27 00:14:28,188 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:14:28,191 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,192 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,196 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,198 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,199 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,215 - INFO - Request received for /get-jobs
+2025-08-27 00:14:28,215 - INFO - Response sent for /get-jobs
+2025-08-27 00:14:28,216 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,217 - INFO - Request received for /get-states
+2025-08-27 00:14:28,218 - INFO - Request received for /get-exp-level
+2025-08-27 00:14:28,218 - INFO - Response sent for /get-exp-level
+2025-08-27 00:14:28,219 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,219 - INFO - Response sent for /get-states
+2025-08-27 00:14:28,220 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,222 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:28,258 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:28] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,801 - INFO - Request received for home page
+2025-08-27 00:14:30,802 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "GET / HTTP/1.1" 200 -
+2025-08-27 00:14:30,838 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:14:30,840 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,842 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,844 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,847 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,848 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,858 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,883 - INFO - Request received for /get-jobs
+2025-08-27 00:14:30,883 - INFO - Response sent for /get-jobs
+2025-08-27 00:14:30,883 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,885 - INFO - Request received for /get-states
+2025-08-27 00:14:30,886 - INFO - Request received for /get-exp-level
+2025-08-27 00:14:30,887 - INFO - Response sent for /get-exp-level
+2025-08-27 00:14:30,887 - INFO - Response sent for /get-states
+2025-08-27 00:14:30,887 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:14:30,888 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:30] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,809 - INFO - Request received for home page
+2025-08-27 00:14:36,810 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "GET / HTTP/1.1" 200 -
+2025-08-27 00:14:36,835 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:14:36,847 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,847 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,849 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,850 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,851 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,866 - INFO - Request received for /get-jobs
+2025-08-27 00:14:36,867 - INFO - Response sent for /get-jobs
+2025-08-27 00:14:36,867 - INFO - Request received for /get-states
+2025-08-27 00:14:36,868 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,868 - INFO - Request received for /get-exp-level
+2025-08-27 00:14:36,869 - INFO - Response sent for /get-states
+2025-08-27 00:14:36,869 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,870 - INFO - Response sent for /get-exp-level
+2025-08-27 00:14:36,870 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,871 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:14:36,889 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:36] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,405 - INFO - Request received for home page
+2025-08-27 00:14:45,405 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "GET / HTTP/1.1" 200 -
+2025-08-27 00:14:45,432 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,436 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,437 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,441 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,443 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,444 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,458 - INFO - Request received for /get-jobs
+2025-08-27 00:14:45,459 - INFO - Response sent for /get-jobs
+2025-08-27 00:14:45,459 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,460 - INFO - Request received for /get-states
+2025-08-27 00:14:45,462 - INFO - Request received for /get-exp-level
+2025-08-27 00:14:45,462 - INFO - Response sent for /get-states
+2025-08-27 00:14:45,463 - INFO - Response sent for /get-exp-level
+2025-08-27 00:14:45,463 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,463 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:14:45,527 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:45] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,838 - INFO - Request received for home page
+2025-08-27 00:14:59,838 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "GET / HTTP/1.1" 200 -
+2025-08-27 00:14:59,879 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:14:59,884 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,885 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,889 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,889 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,890 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,904 - INFO - Request received for /get-jobs
+2025-08-27 00:14:59,905 - INFO - Request received for /get-states
+2025-08-27 00:14:59,905 - INFO - Response sent for /get-jobs
+2025-08-27 00:14:59,906 - INFO - Response sent for /get-states
+2025-08-27 00:14:59,906 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,906 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,907 - INFO - Request received for /get-exp-level
+2025-08-27 00:14:59,909 - INFO - Response sent for /get-exp-level
+2025-08-27 00:14:59,911 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,911 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:14:59,927 - INFO - 127.0.0.1 - - [27/Aug/2025 00:14:59] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,721 - INFO - Request received for home page
+2025-08-27 00:15:02,722 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "GET / HTTP/1.1" 200 -
+2025-08-27 00:15:02,759 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:15:02,761 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,762 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,765 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,767 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,769 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,778 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,786 - INFO - Request received for /get-jobs
+2025-08-27 00:15:02,787 - INFO - Response sent for /get-jobs
+2025-08-27 00:15:02,787 - INFO - Request received for /get-states
+2025-08-27 00:15:02,787 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,788 - INFO - Response sent for /get-states
+2025-08-27 00:15:02,788 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:15:02,789 - INFO - Request received for /get-exp-level
+2025-08-27 00:15:02,790 - INFO - Response sent for /get-exp-level
+2025-08-27 00:15:02,791 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:02] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,456 - INFO - Request received for home page
+2025-08-27 00:15:57,457 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "GET / HTTP/1.1" 200 -
+2025-08-27 00:15:57,540 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:15:57,543 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,545 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,549 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,552 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,553 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,565 - INFO - Request received for /get-jobs
+2025-08-27 00:15:57,566 - INFO - Request received for /get-states
+2025-08-27 00:15:57,566 - INFO - Response sent for /get-states
+2025-08-27 00:15:57,567 - INFO - Response sent for /get-jobs
+2025-08-27 00:15:57,567 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,568 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,568 - INFO - Request received for /get-exp-level
+2025-08-27 00:15:57,572 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,572 - INFO - Response sent for /get-exp-level
+2025-08-27 00:15:57,573 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:15:57,591 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:57] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:15:59,952 - INFO - Request received for home page
+2025-08-27 00:15:59,953 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:59] "GET / HTTP/1.1" 200 -
+2025-08-27 00:15:59,976 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:15:59,979 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:59] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:59,983 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:59] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:59,984 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:59,986 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:59] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:15:59,988 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:59] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:15:59,990 - INFO - 127.0.0.1 - - [27/Aug/2025 00:15:59] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:15:59,995 - INFO - Request received for /get-jobs
+2025-08-27 00:15:59,996 - INFO - Request received for /get-exp-level
+2025-08-27 00:15:59,998 - INFO - Response sent for /get-exp-level
+2025-08-27 00:15:59,999 - INFO - Response sent for /get-jobs
+2025-08-27 00:16:00,000 - INFO - Request received for /get-states
+2025-08-27 00:16:00,000 - INFO - 127.0.0.1 - - [27/Aug/2025 00:16:00] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:16:00,001 - INFO - 127.0.0.1 - - [27/Aug/2025 00:16:00] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:16:00,001 - INFO - Response sent for /get-states
+2025-08-27 00:16:00,002 - INFO - 127.0.0.1 - - [27/Aug/2025 00:16:00] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:16:51,062 - INFO - Request received for /predict: [8, 1, 1]
+2025-08-27 00:16:51,095 - INFO - Model inference time:  0.0276 seconds
+2025-08-27 00:16:51,095 - INFO - Response sent for /predict: Model Input: [8, 1, 1], Prediction: [29046.75587876615]
+2025-08-27 00:16:51,096 - INFO - 127.0.0.1 - - [27/Aug/2025 00:16:51] "POST /predict HTTP/1.1" 200 -
+2025-08-27 00:17:04,076 - INFO - Request received for /predict: [8, 9, 0]
+2025-08-27 00:17:04,087 - INFO - Model inference time:  0.0105 seconds
+2025-08-27 00:17:04,088 - INFO - Response sent for /predict: Model Input: [8, 9, 0], Prediction: [68693.86944767747]
+2025-08-27 00:17:04,088 - INFO - 127.0.0.1 - - [27/Aug/2025 00:17:04] "POST /predict HTTP/1.1" 200 -
+2025-08-27 00:17:10,820 - INFO - Request received for /predict: [8, 9, 1]
+2025-08-27 00:17:10,831 - INFO - Model inference time:  0.0104 seconds
+2025-08-27 00:17:10,832 - INFO - Response sent for /predict: Model Input: [8, 9, 1], Prediction: [106550.62794237565]
+2025-08-27 00:17:10,832 - INFO - 127.0.0.1 - - [27/Aug/2025 00:17:10] "POST /predict HTTP/1.1" 200 -
+2025-08-27 00:17:16,130 - INFO - Request received for /predict: [8, 9, 2]
+2025-08-27 00:17:16,138 - INFO - Model inference time:  0.0070 seconds
+2025-08-27 00:17:16,138 - INFO - Response sent for /predict: Model Input: [8, 9, 2], Prediction: [128035.34566401974]
+2025-08-27 00:17:16,138 - INFO - 127.0.0.1 - - [27/Aug/2025 00:17:16] "POST /predict HTTP/1.1" 200 -
+2025-08-27 00:19:31,175 - INFO - Request received for home page
+2025-08-27 00:19:31,176 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "GET / HTTP/1.1" 200 -
+2025-08-27 00:19:31,203 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,206 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,209 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,210 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,213 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,216 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,217 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,226 - INFO - Request received for /get-jobs
+2025-08-27 00:19:31,227 - INFO - Response sent for /get-jobs
+2025-08-27 00:19:31,227 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,229 - INFO - Request received for /get-states
+2025-08-27 00:19:31,230 - INFO - Response sent for /get-states
+2025-08-27 00:19:31,230 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:19:31,231 - INFO - Request received for /get-exp-level
+2025-08-27 00:19:31,232 - INFO - Response sent for /get-exp-level
+2025-08-27 00:19:31,232 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:31] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:19:35,920 - INFO - Request received for home page
+2025-08-27 00:19:35,921 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:35] "GET / HTTP/1.1" 200 -
+2025-08-27 00:19:35,992 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:19:35,997 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:35] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,011 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,012 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,013 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,015 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,022 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,049 - INFO - Request received for /get-states
+2025-08-27 00:19:36,050 - INFO - Request received for /get-jobs
+2025-08-27 00:19:36,051 - INFO - Response sent for /get-jobs
+2025-08-27 00:19:36,051 - INFO - Response sent for /get-states
+2025-08-27 00:19:36,052 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,052 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,053 - INFO - Request received for /get-exp-level
+2025-08-27 00:19:36,055 - INFO - Response sent for /get-exp-level
+2025-08-27 00:19:36,056 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:19:36,080 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:36] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,527 - INFO - Request received for home page
+2025-08-27 00:19:41,528 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "GET / HTTP/1.1" 200 -
+2025-08-27 00:19:41,562 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:19:41,565 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,577 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,578 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,579 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,579 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,597 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,607 - INFO - Request received for /get-jobs
+2025-08-27 00:19:41,608 - INFO - Response sent for /get-jobs
+2025-08-27 00:19:41,608 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,610 - INFO - Request received for /get-states
+2025-08-27 00:19:41,611 - INFO - Request received for /get-exp-level
+2025-08-27 00:19:41,612 - INFO - Response sent for /get-states
+2025-08-27 00:19:41,612 - INFO - Response sent for /get-exp-level
+2025-08-27 00:19:41,613 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,614 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:19:41,630 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:41] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,871 - INFO - Request received for home page
+2025-08-27 00:19:44,872 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "GET / HTTP/1.1" 200 -
+2025-08-27 00:19:44,907 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:19:44,909 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,911 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,913 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,917 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,918 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,920 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,924 - INFO - Request received for /get-jobs
+2025-08-27 00:19:44,925 - INFO - Response sent for /get-jobs
+2025-08-27 00:19:44,926 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,926 - INFO - Request received for /get-states
+2025-08-27 00:19:44,927 - INFO - Request received for /get-exp-level
+2025-08-27 00:19:44,928 - INFO - Response sent for /get-states
+2025-08-27 00:19:44,928 - INFO - Response sent for /get-exp-level
+2025-08-27 00:19:44,929 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:19:44,929 - INFO - 127.0.0.1 - - [27/Aug/2025 00:19:44] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:22:00,959 - INFO - Request received for home page
+2025-08-27 00:22:00,961 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:00] "GET / HTTP/1.1" 200 -
+2025-08-27 00:22:00,995 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:22:01,000 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,001 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,003 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,005 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,009 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,028 - INFO - Request received for /get-jobs
+2025-08-27 00:22:01,028 - INFO - Request received for /get-states
+2025-08-27 00:22:01,029 - INFO - Response sent for /get-jobs
+2025-08-27 00:22:01,029 - INFO - Response sent for /get-states
+2025-08-27 00:22:01,030 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,030 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,033 - INFO - Request received for /get-exp-level
+2025-08-27 00:22:01,035 - INFO - Response sent for /get-exp-level
+2025-08-27 00:22:01,036 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,037 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:01,072 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:01] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,688 - INFO - Request received for home page
+2025-08-27 00:22:07,689 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "GET / HTTP/1.1" 200 -
+2025-08-27 00:22:07,708 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:22:07,712 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,714 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,716 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,718 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,722 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,722 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,732 - INFO - Request received for /get-jobs
+2025-08-27 00:22:07,733 - INFO - Response sent for /get-jobs
+2025-08-27 00:22:07,734 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,734 - INFO - Request received for /get-states
+2025-08-27 00:22:07,734 - INFO - Request received for /get-exp-level
+2025-08-27 00:22:07,735 - INFO - Response sent for /get-states
+2025-08-27 00:22:07,736 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:22:07,736 - INFO - Response sent for /get-exp-level
+2025-08-27 00:22:07,737 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:07] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,876 - INFO - Request received for home page
+2025-08-27 00:22:42,878 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "GET / HTTP/1.1" 200 -
+2025-08-27 00:22:42,904 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:22:42,906 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,911 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,912 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,913 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,914 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,931 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,933 - INFO - Request received for /get-jobs
+2025-08-27 00:22:42,934 - INFO - Response sent for /get-jobs
+2025-08-27 00:22:42,934 - INFO - Request received for /get-states
+2025-08-27 00:22:42,935 - INFO - Request received for /get-exp-level
+2025-08-27 00:22:42,935 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,936 - INFO - Response sent for /get-states
+2025-08-27 00:22:42,936 - INFO - Response sent for /get-exp-level
+2025-08-27 00:22:42,936 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,937 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:22:42,960 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:42] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,459 - INFO - Request received for home page
+2025-08-27 00:22:45,460 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "GET / HTTP/1.1" 200 -
+2025-08-27 00:22:45,479 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:22:45,481 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,482 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,484 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,487 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,488 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,495 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,501 - INFO - Request received for /get-jobs
+2025-08-27 00:22:45,501 - INFO - Request received for /get-exp-level
+2025-08-27 00:22:45,502 - INFO - Response sent for /get-jobs
+2025-08-27 00:22:45,502 - INFO - Response sent for /get-exp-level
+2025-08-27 00:22:45,503 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,503 - INFO - Request received for /get-states
+2025-08-27 00:22:45,504 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:22:45,504 - INFO - Response sent for /get-states
+2025-08-27 00:22:45,505 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:45] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,391 - INFO - Request received for home page
+2025-08-27 00:22:52,392 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "GET / HTTP/1.1" 200 -
+2025-08-27 00:22:52,438 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,442 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,445 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,448 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,451 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,452 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,459 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,479 - INFO - Request received for /get-jobs
+2025-08-27 00:22:52,480 - INFO - Response sent for /get-jobs
+2025-08-27 00:22:52,481 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,482 - INFO - Request received for /get-exp-level
+2025-08-27 00:22:52,482 - INFO - Response sent for /get-exp-level
+2025-08-27 00:22:52,483 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:22:52,484 - INFO - Request received for /get-states
+2025-08-27 00:22:52,485 - INFO - Response sent for /get-states
+2025-08-27 00:22:52,486 - INFO - 127.0.0.1 - - [27/Aug/2025 00:22:52] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,723 - INFO - Request received for home page
+2025-08-27 00:23:49,724 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "GET / HTTP/1.1" 200 -
+2025-08-27 00:23:49,747 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:23:49,754 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,761 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,762 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,764 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,764 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,782 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,788 - INFO - Request received for /get-jobs
+2025-08-27 00:23:49,788 - INFO - Response sent for /get-jobs
+2025-08-27 00:23:49,788 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,789 - INFO - Request received for /get-states
+2025-08-27 00:23:49,790 - INFO - Response sent for /get-states
+2025-08-27 00:23:49,790 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,792 - INFO - Request received for /get-exp-level
+2025-08-27 00:23:49,792 - INFO - Response sent for /get-exp-level
+2025-08-27 00:23:49,793 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:23:49,828 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:49] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,844 - INFO - Request received for home page
+2025-08-27 00:23:51,845 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "GET / HTTP/1.1" 200 -
+2025-08-27 00:23:51,866 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:23:51,869 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,871 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,872 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,874 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,877 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,882 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,887 - INFO - Request received for /get-jobs
+2025-08-27 00:23:51,888 - INFO - Response sent for /get-jobs
+2025-08-27 00:23:51,888 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,890 - INFO - Request received for /get-states
+2025-08-27 00:23:51,891 - INFO - Request received for /get-exp-level
+2025-08-27 00:23:51,892 - INFO - Response sent for /get-exp-level
+2025-08-27 00:23:51,892 - INFO - Response sent for /get-states
+2025-08-27 00:23:51,892 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:23:51,893 - INFO - 127.0.0.1 - - [27/Aug/2025 00:23:51] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,412 - INFO - Request received for home page
+2025-08-27 00:24:36,412 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "GET / HTTP/1.1" 200 -
+2025-08-27 00:24:36,442 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,453 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,454 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,454 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,456 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,456 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,471 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,476 - INFO - Request received for /get-jobs
+2025-08-27 00:24:36,477 - INFO - Response sent for /get-jobs
+2025-08-27 00:24:36,477 - INFO - Request received for /get-states
+2025-08-27 00:24:36,477 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,478 - INFO - Response sent for /get-states
+2025-08-27 00:24:36,478 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,482 - INFO - Request received for /get-exp-level
+2025-08-27 00:24:36,483 - INFO - Response sent for /get-exp-level
+2025-08-27 00:24:36,484 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:24:36,520 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:36] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,549 - INFO - Request received for home page
+2025-08-27 00:24:39,549 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "GET / HTTP/1.1" 200 -
+2025-08-27 00:24:39,572 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,573 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,574 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,576 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,577 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,579 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,587 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,591 - INFO - Request received for /get-jobs
+2025-08-27 00:24:39,592 - INFO - Response sent for /get-jobs
+2025-08-27 00:24:39,592 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,595 - INFO - Request received for /get-exp-level
+2025-08-27 00:24:39,596 - INFO - Request received for /get-states
+2025-08-27 00:24:39,596 - INFO - Response sent for /get-exp-level
+2025-08-27 00:24:39,596 - INFO - Response sent for /get-states
+2025-08-27 00:24:39,597 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:24:39,597 - INFO - 127.0.0.1 - - [27/Aug/2025 00:24:39] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:31:27,510 - INFO - Request received for home page
+2025-08-27 00:31:27,512 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "GET / HTTP/1.1" 200 -
+2025-08-27 00:31:27,538 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:27,540 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:27,542 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:27,546 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:31:27,547 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:27,551 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2025-08-27 00:31:27,556 - INFO - Request received for /get-jobs
+2025-08-27 00:31:27,557 - INFO - Response sent for /get-jobs
+2025-08-27 00:31:27,557 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:31:27,558 - INFO - Request received for /get-states
+2025-08-27 00:31:27,559 - INFO - Response sent for /get-states
+2025-08-27 00:31:27,559 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:31:27,561 - INFO - Request received for /get-exp-level
+2025-08-27 00:31:27,562 - INFO - Response sent for /get-exp-level
+2025-08-27 00:31:27,563 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:31:27,568 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:27] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,108 - INFO - Request received for home page
+2025-08-27 00:31:31,108 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "GET / HTTP/1.1" 200 -
+2025-08-27 00:31:31,135 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:31:31,139 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,148 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,148 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,149 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,150 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,162 - INFO - Request received for /get-jobs
+2025-08-27 00:31:31,163 - INFO - Response sent for /get-jobs
+2025-08-27 00:31:31,163 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,164 - INFO - Request received for /get-states
+2025-08-27 00:31:31,164 - INFO - Response sent for /get-states
+2025-08-27 00:31:31,165 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,166 - INFO - Request received for /get-exp-level
+2025-08-27 00:31:31,167 - INFO - Response sent for /get-exp-level
+2025-08-27 00:31:31,167 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,169 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:31:31,211 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:31:51,839 - INFO - Request received for home page
+2025-08-27 00:31:51,840 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "GET / HTTP/1.1" 200 -
+2025-08-27 00:31:51,863 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:51,865 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:51,868 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:51,870 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:51,872 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:31:51,876 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2025-08-27 00:31:51,883 - INFO - Request received for /get-jobs
+2025-08-27 00:31:51,884 - INFO - Response sent for /get-jobs
+2025-08-27 00:31:51,884 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:31:51,888 - INFO - Request received for /get-states
+2025-08-27 00:31:51,888 - INFO - Response sent for /get-states
+2025-08-27 00:31:51,889 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:31:51,890 - INFO - Request received for /get-exp-level
+2025-08-27 00:31:51,891 - INFO - Response sent for /get-exp-level
+2025-08-27 00:31:51,891 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:31:51,894 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:51] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,890 - INFO - Request received for home page
+2025-08-27 00:31:54,890 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "GET / HTTP/1.1" 200 -
+2025-08-27 00:31:54,919 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,925 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,927 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,928 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,929 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,932 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,947 - INFO - Request received for /get-jobs
+2025-08-27 00:31:54,947 - INFO - Response sent for /get-jobs
+2025-08-27 00:31:54,947 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,948 - INFO - Request received for /get-states
+2025-08-27 00:31:54,949 - INFO - Response sent for /get-states
+2025-08-27 00:31:54,949 - INFO - Request received for /get-exp-level
+2025-08-27 00:31:54,950 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,950 - INFO - Response sent for /get-exp-level
+2025-08-27 00:31:54,951 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:31:54,967 - INFO - 127.0.0.1 - - [27/Aug/2025 00:31:54] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,738 - INFO - Request received for home page
+2025-08-27 00:32:45,739 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "GET / HTTP/1.1" 200 -
+2025-08-27 00:32:45,771 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:32:45,774 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,776 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,779 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,782 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,783 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,796 - INFO - Request received for /get-jobs
+2025-08-27 00:32:45,796 - INFO - Response sent for /get-jobs
+2025-08-27 00:32:45,797 - INFO - Request received for /get-states
+2025-08-27 00:32:45,797 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,799 - INFO - Response sent for /get-states
+2025-08-27 00:32:45,799 - INFO - Request received for /get-exp-level
+2025-08-27 00:32:45,800 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,802 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,803 - INFO - Response sent for /get-exp-level
+2025-08-27 00:32:45,803 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:32:45,831 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:45] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,541 - INFO - Request received for home page
+2025-08-27 00:32:48,542 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "GET / HTTP/1.1" 200 -
+2025-08-27 00:32:48,560 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:32:48,563 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,565 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,568 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,569 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,571 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,574 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,589 - INFO - Request received for /get-jobs
+2025-08-27 00:32:48,590 - INFO - Request received for /get-exp-level
+2025-08-27 00:32:48,591 - INFO - Request received for /get-states
+2025-08-27 00:32:48,592 - INFO - Response sent for /get-exp-level
+2025-08-27 00:32:48,592 - INFO - Response sent for /get-jobs
+2025-08-27 00:32:48,593 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,593 - INFO - Response sent for /get-states
+2025-08-27 00:32:48,593 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:32:48,594 - INFO - 127.0.0.1 - - [27/Aug/2025 00:32:48] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,398 - INFO - Request received for home page
+2025-08-27 00:34:28,400 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "GET / HTTP/1.1" 200 -
+2025-08-27 00:34:28,421 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:34:28,426 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,428 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,429 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,432 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,433 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,435 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,455 - INFO - Request received for /get-jobs
+2025-08-27 00:34:28,455 - INFO - Response sent for /get-jobs
+2025-08-27 00:34:28,455 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,456 - INFO - Request received for /get-states
+2025-08-27 00:34:28,456 - INFO - Response sent for /get-states
+2025-08-27 00:34:28,457 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:34:28,458 - INFO - Request received for /get-exp-level
+2025-08-27 00:34:28,458 - INFO - Response sent for /get-exp-level
+2025-08-27 00:34:28,459 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:28] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,316 - INFO - Request received for home page
+2025-08-27 00:34:31,318 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "GET / HTTP/1.1" 200 -
+2025-08-27 00:34:31,361 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:34:31,366 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,368 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,370 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,373 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,375 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,387 - INFO - Request received for /get-jobs
+2025-08-27 00:34:31,388 - INFO - Response sent for /get-jobs
+2025-08-27 00:34:31,388 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,391 - INFO - Request received for /get-states
+2025-08-27 00:34:31,393 - INFO - Request received for /get-exp-level
+2025-08-27 00:34:31,394 - INFO - Response sent for /get-states
+2025-08-27 00:34:31,396 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,396 - INFO - Response sent for /get-exp-level
+2025-08-27 00:34:31,396 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,397 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:34:31,434 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:34:55,970 - INFO - Request received for home page
+2025-08-27 00:34:55,971 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:55] "GET / HTTP/1.1" 200 -
+2025-08-27 00:34:55,988 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:34:55,993 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:55] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:55,994 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:55] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:55,995 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:55] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:55,996 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:55] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:34:55,998 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:34:56,001 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:56] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:34:56,011 - INFO - Request received for /get-jobs
+2025-08-27 00:34:56,012 - INFO - Response sent for /get-jobs
+2025-08-27 00:34:56,012 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:56] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:34:56,014 - INFO - Request received for /get-states
+2025-08-27 00:34:56,015 - INFO - Request received for /get-exp-level
+2025-08-27 00:34:56,016 - INFO - Response sent for /get-states
+2025-08-27 00:34:56,017 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:56] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:34:56,017 - INFO - Response sent for /get-exp-level
+2025-08-27 00:34:56,018 - INFO - 127.0.0.1 - - [27/Aug/2025 00:34:56] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,864 - INFO - Request received for home page
+2025-08-27 00:35:05,865 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "GET / HTTP/1.1" 200 -
+2025-08-27 00:35:05,898 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:35:05,909 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,911 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,912 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,912 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,913 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,930 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,939 - INFO - Request received for /get-jobs
+2025-08-27 00:35:05,940 - INFO - Request received for /get-states
+2025-08-27 00:35:05,940 - INFO - Response sent for /get-states
+2025-08-27 00:35:05,941 - INFO - Response sent for /get-jobs
+2025-08-27 00:35:05,941 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,942 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,943 - INFO - Request received for /get-exp-level
+2025-08-27 00:35:05,943 - INFO - Response sent for /get-exp-level
+2025-08-27 00:35:05,944 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:35:05,988 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:05] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:35:36,967 - INFO - Request received for /predict: [12, 0, 0]
+2025-08-27 00:35:37,011 - INFO - Model inference time:  0.0321 seconds
+2025-08-27 00:35:37,012 - INFO - Response sent for /predict: Model Input: [12, 0, 0], Prediction: [214981.6871128861]
+2025-08-27 00:35:37,013 - INFO - 127.0.0.1 - - [27/Aug/2025 00:35:37] "POST /predict HTTP/1.1" 200 -
+2025-08-27 00:38:20,679 - INFO - Request received for home page
+2025-08-27 00:38:20,681 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "GET / HTTP/1.1" 200 -
+2025-08-27 00:38:20,708 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:38:20,715 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,717 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,717 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,718 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,718 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,730 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,734 - INFO - Request received for /get-jobs
+2025-08-27 00:38:20,735 - INFO - Response sent for /get-jobs
+2025-08-27 00:38:20,735 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,739 - INFO - Request received for /get-states
+2025-08-27 00:38:20,739 - INFO - Response sent for /get-states
+2025-08-27 00:38:20,740 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,741 - INFO - Request received for /get-exp-level
+2025-08-27 00:38:20,742 - INFO - Response sent for /get-exp-level
+2025-08-27 00:38:20,742 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:38:20,775 - INFO - 127.0.0.1 - - [27/Aug/2025 00:38:20] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,621 - INFO - Request received for home page
+2025-08-27 00:44:34,622 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "GET / HTTP/1.1" 200 -
+2025-08-27 00:44:34,666 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,668 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,679 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,680 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,681 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,681 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,702 - INFO - Request received for /get-jobs
+2025-08-27 00:44:34,702 - INFO - Response sent for /get-jobs
+2025-08-27 00:44:34,703 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,705 - INFO - Request received for /get-states
+2025-08-27 00:44:34,706 - INFO - Response sent for /get-states
+2025-08-27 00:44:34,706 - INFO - Request received for /get-exp-level
+2025-08-27 00:44:34,707 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,708 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,708 - INFO - Response sent for /get-exp-level
+2025-08-27 00:44:34,709 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 00:44:34,744 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:34] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,711 - INFO - Request received for home page
+2025-08-27 00:44:46,712 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "GET / HTTP/1.1" 200 -
+2025-08-27 00:44:46,743 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,745 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-27 00:44:46,745 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,747 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,757 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,760 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,762 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,767 - INFO - Request received for /get-jobs
+2025-08-27 00:44:46,768 - INFO - Response sent for /get-jobs
+2025-08-27 00:44:46,768 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,770 - INFO - Request received for /get-states
+2025-08-27 00:44:46,770 - INFO - Request received for /get-exp-level
+2025-08-27 00:44:46,771 - INFO - Response sent for /get-states
+2025-08-27 00:44:46,772 - INFO - Response sent for /get-exp-level
+2025-08-27 00:44:46,772 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 00:44:46,773 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
