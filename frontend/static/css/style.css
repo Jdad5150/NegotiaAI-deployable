@@ -93,14 +93,14 @@ body {
 }
 
 @keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
-  }
-  50% {
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
-  }
+
+  0%,
   100% {
-    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.6);
+  }
+
+  50% {
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -114,7 +114,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   border-radius: 20px;
-  padding: 2px;
+  padding: 20px;
   z-index: 0;
   overflow: hidden;
 }
@@ -128,33 +128,43 @@ body {
   bottom: 0;
   border-radius: inherit;
   padding: 4px;
-  background: linear-gradient(
-    90deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
+  background: linear-gradient(90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet);
   background-size: 400% 400%;
   animation: rgb-border-animation 10s ease-in-out infinite;
-  mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
-  mask-composite: exclude;
-  -webkit-mask: linear-gradient(white, white) content-box,
-    linear-gradient(white, white);
-  -webkit-mask-composite: xor;
   z-index: -1;
+
+  /* Cross-browser mask solution */
+  mask:
+    linear-gradient(#fff, #fff) content-box,
+    linear-gradient(#fff, #fff);
+  mask-composite: exclude;
+  -webkit-mask:
+    linear-gradient(#fff, #fff) content-box,
+    linear-gradient(#fff, #fff);
+  -webkit-mask-composite: xor;
+
+  /* Firefox specific */
+  @supports (-moz-appearance: none) {
+    mask-composite: subtract;
+  }
 }
 
 @keyframes rgb-border-animation {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -253,8 +263,8 @@ button:hover {
   display: none;
 }
 
-#prediction-result:not(:empty) ~ h1,
-#prediction-result:not(:empty) ~ h2 {
+#prediction-result:not(:empty)~h1,
+#prediction-result:not(:empty)~h2 {
   display: none;
 }
 
@@ -353,6 +363,18 @@ footer p {
   margin: 0;
 }
 
+.loader::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
 .loader {
   display: flex;
   justify-content: center;
@@ -363,30 +385,22 @@ footer p {
   width: 40px;
   height: 40px;
   color: white;
-  background: conic-gradient(
-      from -45deg at top 20px left 50%,
+  background: conic-gradient(from -45deg at top 20px left 50%,
       #0000,
       currentColor 1deg 90deg,
-      #0000 91deg
-    ),
-    conic-gradient(
-      from 45deg at right 20px top 50%,
+      #0000 91deg),
+    conic-gradient(from 45deg at right 20px top 50%,
       #0000,
       currentColor 1deg 90deg,
-      #0000 91deg
-    ),
-    conic-gradient(
-      from 135deg at bottom 20px left 50%,
+      #0000 91deg),
+    conic-gradient(from 135deg at bottom 20px left 50%,
       #0000,
       currentColor 1deg 90deg,
-      #0000 91deg
-    ),
-    conic-gradient(
-      from -135deg at left 20px top 50%,
+      #0000 91deg),
+    conic-gradient(from -135deg at left 20px top 50%,
       #0000,
       currentColor 1deg 90deg,
-      #0000 91deg
-    );
+      #0000 91deg);
   animation: l4 2s infinite cubic-bezier(0.3, 1, 0, 1);
 }
 
@@ -396,6 +410,7 @@ footer p {
     height: 60px;
     transform: translate(-10px, -10px) rotate(180deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
