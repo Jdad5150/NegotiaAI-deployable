@@ -883,3 +883,24 @@
 2025-08-27 00:44:46,772 - INFO - Response sent for /get-exp-level
 2025-08-27 00:44:46,772 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /get-states HTTP/1.1[0m" 304 -
 2025-08-27 00:44:46,773 - INFO - 127.0.0.1 - - [27/Aug/2025 00:44:46] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2025-08-27 01:17:11,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-27 01:17:11,654 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-27 01:17:17,161 - INFO - Request received for home page
+2025-08-27 01:17:17,167 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "GET / HTTP/1.1" 200 -
+2025-08-27 01:17:17,221 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,224 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /static/js/get-jobs.js HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,228 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /static/js/get-states.js HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,230 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,235 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /static/js/get-exp-level.js HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,235 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,242 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /static/assets/bg.png HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,809 - INFO - Request received for /get-jobs
+2025-08-27 01:17:17,810 - INFO - Request received for /get-states
+2025-08-27 01:17:17,811 - INFO - Request received for /get-exp-level
+2025-08-27 01:17:17,811 - INFO - Response sent for /get-jobs
+2025-08-27 01:17:17,812 - INFO - Response sent for /get-states
+2025-08-27 01:17:17,812 - INFO - Response sent for /get-exp-level
+2025-08-27 01:17:17,812 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,813 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /get-states HTTP/1.1[0m" 304 -
+2025-08-27 01:17:17,813 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -

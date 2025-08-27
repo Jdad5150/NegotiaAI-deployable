@@ -1,22 +1,11 @@
 
 from flask import Flask, render_template, request, jsonify, send_file
-from flask_cors import CORS
 import logging
 import numpy as np
 import joblib
 import pandas as pd
 import sys
 import time
-
-# ...existing code...
-
-app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/static')
-CORS(app)
-
-
-
-
-
 
 # Logging configuration
 logging.basicConfig(
@@ -36,7 +25,7 @@ logging.getLogger().addHandler(console_handler)
 model = joblib.load('salary_prediction_model.pkl')
 
 app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/static')
-CORS(app)
+
 # Health check endpoint (must be after app creation)
 @app.route('/health')
 def health():
