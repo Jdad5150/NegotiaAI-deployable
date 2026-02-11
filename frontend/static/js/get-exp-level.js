@@ -9,11 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         option.text = level;
         exp_list.appendChild(option);
       });
-
-      exp_list.addEventListener("change", function () {
-        exp_list.style.color = "black";
-        exp_list.style.backgroundColor = "white";
-      });
     })
     .catch((error) => console.error("Error:", error));
 

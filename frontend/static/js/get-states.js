@@ -9,11 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         option.text = state;
         state_list.appendChild(option);
       });
-
-      state_list.addEventListener("change", function () {
-        state_list.style.color = "black";
-        state_list.style.backgroundColor = "white";
-      });
     })
     .catch((error) => console.error("Error:", error));
 });
