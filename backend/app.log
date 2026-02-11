@@ -904,3 +904,39 @@
 2025-08-27 01:17:17,812 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /get-jobs HTTP/1.1[0m" 304 -
 2025-08-27 01:17:17,813 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /get-states HTTP/1.1[0m" 304 -
 2025-08-27 01:17:17,813 - INFO - 127.0.0.1 - - [27/Aug/2025 01:17:17] "[36mGET /get-exp-level HTTP/1.1[0m" 304 -
+2026-02-11 01:09:04,623 - INFO - Request received for home page
+2026-02-11 01:09:12,885 - INFO - Request received for home page
+2026-02-11 01:09:12,890 - INFO - Request received for /get-jobs
+2026-02-11 01:09:12,893 - INFO - Response sent for /get-jobs
+2026-02-11 01:09:12,894 - INFO - Request received for /get-states
+2026-02-11 01:09:12,894 - INFO - Response sent for /get-states
+2026-02-11 01:09:12,894 - INFO - Request received for /get-exp-level
+2026-02-11 01:09:12,894 - INFO - Response sent for /get-exp-level
+2026-02-11 01:09:12,894 - INFO - Request received for /predict: [1.0, 1.0, 1.0]
+2026-02-11 01:09:12,901 - INFO - Model inference time:  0.0066 seconds
+2026-02-11 01:09:12,902 - INFO - Response sent for /predict: Model Input: [1.0, 1.0, 1.0], Prediction: [35438.050230984816]
+2026-02-11 01:10:50,316 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 01:10:50,316 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 01:11:15,792 - INFO - Request received for home page
+2026-02-11 01:11:15,796 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:15] "GET / HTTP/1.1" 200 -
+2026-02-11 01:11:15,822 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-11 01:11:15,823 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:15] "GET /static/js/get-jobs.js HTTP/1.1" 200 -
+2026-02-11 01:11:15,823 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:15] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2026-02-11 01:11:15,824 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:15] "GET /static/js/get-states.js HTTP/1.1" 200 -
+2026-02-11 01:11:15,824 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:15] "GET /static/js/get-exp-level.js HTTP/1.1" 200 -
+2026-02-11 01:11:15,825 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:15] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-11 01:11:16,003 - INFO - Request received for /get-jobs
+2026-02-11 01:11:16,003 - INFO - Request received for /get-states
+2026-02-11 01:11:16,003 - INFO - Request received for /get-exp-level
+2026-02-11 01:11:16,004 - INFO - Response sent for /get-jobs
+2026-02-11 01:11:16,005 - INFO - Response sent for /get-exp-level
+2026-02-11 01:11:16,005 - INFO - Response sent for /get-states
+2026-02-11 01:11:16,005 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:16] "GET /get-jobs HTTP/1.1" 200 -
+2026-02-11 01:11:16,005 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:16] "GET /get-exp-level HTTP/1.1" 200 -
+2026-02-11 01:11:16,006 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:16] "GET /get-states HTTP/1.1" 200 -
+2026-02-11 01:11:16,124 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:16] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2026-02-11 01:11:27,071 - INFO - Request received for /predict: [8, 9, 2]
+2026-02-11 01:11:27,078 - INFO - Model inference time:  0.0064 seconds
+2026-02-11 01:11:27,078 - INFO - Response sent for /predict: Model Input: [8, 9, 2], Prediction: [128035.34566401974]
+2026-02-11 01:11:27,078 - INFO - 127.0.0.1 - - [11/Feb/2026 01:11:27] "POST /predict HTTP/1.1" 200 -
